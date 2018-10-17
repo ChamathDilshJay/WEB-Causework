@@ -2,6 +2,7 @@
  
 include 'dbconn.php';
  error_reporting(0);
+  $id = $_POST['id'];
   $pname = $_POST['pname'];
   $price = $_POST['price'];
   $qty = $_POST['qty'];
@@ -14,7 +15,7 @@ if(!$_POST['submit']){
 
 else {
 
-$sql = "UPDATE data SET pname='$pname' price='$price' qty='$qty' WHERE id='$id' ";
+$sql = "UPDATE data SET pname='$pname', price='$price', qty='$qty' WHERE id='$id' ";
 
 if (mysqli_query($dbcon, $sql)) {
     echo "<h1><center>The record updated successfully</center></h1>";

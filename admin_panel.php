@@ -16,10 +16,16 @@
 
 <div id="sidemenu">
  <ul>
-    <li><a href="add.php" target="_blank"> Add a Product </a></li>
-	<li><a href="delete.php" target="_blank"> Delete a Product </a></li>
-	<li><a href="update.php" target="_blank"> Update a Product </a></li>
- </ul>	
+    <li><a href="add.php"> Add a Product </a></li>
+	<li><a href="delete.php"> Delete a Product </a></li>
+	<li><a href="update.php"> Update a Product </a></li>
+ </ul>
+ <br>
+ <div align='center'>	
+ <a id="button1" href='index.php'>Logout</a>
+</div>
+ <br><br><br>
+
 </div>
 
 <div id="data">
