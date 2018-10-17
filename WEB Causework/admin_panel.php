@@ -11,7 +11,7 @@
 
 <div id="header">
 <center><img src="admin_icon.png">
-<h3>Welcome to Admin Panel</h3></center>
+<h3>Aura Mobile Admin Panel</h3></center>
 </div>
 
 <div id="sidemenu">
@@ -29,17 +29,16 @@
 <?php
     include 'dbconn.php'; 
 	
-	
 	$sql = "SELECT * FROM data";
-	$result = mysqli_query($conn, $sql);
-
+	$result = mysqli_query($dbcon, $sql);
+echo "<h2>Available product list</h2>";
 if (mysqli_num_rows($result) > 0) {
    
-    while($row = mysqli_fetch_assoc($result)) {
-    echo "<h4>ID: </h4>" . $row["id"]. "<br>" . "  Name: " . $row["name"].  " <br> " .  "Email: " . $row["email"] .  "<br>" . "Password: " . $row["pass"]. "<br><br><br>";
+    while($row = mysqli_fetch_assoc($result)) {	
+    echo "ID: " . $row["id"]. "<br>" . "  Product Name: " . $row["pname"].  " <br> " .  "Price : " . $row["price"] .  "<br>" . "Quantity Available : " . $row["qty"]. "<br><br><br>";
 	 }
 } else {
-    echo "<h3><center>No user data found!<center></h3>";
+    echo "<h3><center>No products available!<center></h3>";
 }
 ?>
 </div>
