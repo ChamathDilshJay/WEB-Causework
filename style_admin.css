@@ -58,3 +58,18 @@ img{
     color: white;
 }
 
+#goadmin {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+    border-radius: 12px;
+    padding: 7px 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#goadmin:hover {
+    background-color: #555555;
+    color: white;
+}
+

@@ -2,6 +2,42 @@ body{
  background-color: #b7ffe5;
 }
 
+div{
+ background-color: powderblue;
+ color: #036032;
+}
+
+#prname{
+ font-weight: bold;
+}
+
+#buynow{
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 12px;
+ font-size: 15px;
+ position: absolute;
+ padding: 2px 7px;
+ text-decoration: none;
+}
+
+#verify{
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 12px;
+ font-size: 25px;
+ position: absolute;
+ padding: 15px 20px;
+ text-decoration: none;
+}
+
+#verify:hover {
+ background-color: white;
+ color: black; 
+ border: 2px solid #4CAF50;
+
 img{
  width: 65px;
  /*height: 150px;*/

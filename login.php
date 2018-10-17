@@ -2,7 +2,7 @@
 <html>
 	<head>
  		<title> Login</title>
- 			<link rel="stylesheet" type="text/css" href="style.css">
+ 			<link rel="stylesheet" type="text/css" href="style_login.css">
 	</head>
 	<body>
  		<div class="container">
@@ -12,7 +12,7 @@
  			<input type="text" name="username" placeholder="Enter the username"/> 
  				</div>
  				<div class="form-input">
- 					<input type="password" name="password" placeholder="Enter the password"/>
+ 					<input type="password" name="password" placeholder="Enter the password"/><br><br>
  				</div>
  				<input type="submit" type="submit" value="LOGIN" class="btn-login"/>
  			</form>

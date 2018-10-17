@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aura Mobile</title>
+    <link rel="stylesheet" type="text/css" href="style_index.css">
+</head>
+<body>
+
 <?php 
 include 'dbconn.php';
 if(isset($_POST['username'])){
@@ -9,25 +17,20 @@ if(isset($_POST['username'])){
     
     $result=mysqli_query($dbcon,$sql);
     if(mysqli_num_rows($result)==1){
-        echo " You Have Successfully Logged in";
-	echo"<hr>";
-	
-	echo "Go To Admin Page";
-	
-	echo"<hr>";
-	echo "<a href='admin_panel.php'>Admin Panel</a>";
+        echo "<h2>You Have Successfully Logged in</h2>";
+	    echo "<br><br><a id='verify' href='admin_panel.php'>Continue to Admin Panel >></a>";
+
         exit();
     }
     else{
-        echo " You Have Incorrect Details";
-	echo '<hr>';	
-	echo "Retry By Clicking The link below";
-	
-	echo '<hr>';	
-	echo "<a href='Login.php'>Go Back</a>";
+        echo "<h2><img src='stop.png' height='22px' width='22px'> Incorrect Username or Password</h2>";
+        echo "<br><br><a id='verify' href='login.php'><< Go back to Login</a>";
  
         exit();
     }
         
 }
 ?>
+
+</body>
+</html>
