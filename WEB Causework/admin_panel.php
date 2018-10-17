@@ -16,17 +16,18 @@
 
 <div id="sidemenu">
  <ul>
-    <li><a href="add.php" target="_blank"> Add Updates </a></li>
-	<li><a href="delete.php" target="_blank"> Delete Update </a></li>
-	<li><a href="update.php" target="_blank"> Update Post </a></li>
+    <li><a href="add.php" target="_blank"> Add a Product </a></li>
+	<li><a href="delete.php" target="_blank"> Delete a Product </a></li>
+	<li><a href="update.php" target="_blank"> Update a Product </a></li>
  </ul>	
 </div>
 
 <div id="data">
 <br><br>
 
+
 <?php
-    include 'connection.php'; 
+    include 'dbconn.php'; 
 	
 	
 	$sql = "SELECT * FROM data";

@@ -15,7 +15,7 @@ if(isset($_POST['username'])){
 	echo "Go To Admin Page";
 	
 	echo"<hr>";
-	echo "<a href='admin.html'>Admin Page</a>";
+	echo "<a href='admin_panel.php'>Admin Panel</a>";
         exit();
     }
     else{
