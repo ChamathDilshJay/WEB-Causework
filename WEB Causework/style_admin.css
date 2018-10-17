@@ -1,0 +1,44 @@
+body{
+	background: #b7ffe5;
+	margin: 0px;
+	border: 0px;
+}
+#header{
+	width: auto;
+	height: 110px;
+	background: #5ed598;
+	color: black;
+}
+#sidemenu{
+	float: left;
+	width: 300px;
+	background: #5ed598;
+	color: black;
+	
+}
+#data{
+	width: auto;
+	background:#b7ffe5;
+	color: black;
+	padding-left:330px;
+}
+
+#sidemenu.ul li{
+	display: inline-block;
+	padding-bottom: 10px;
+	
+}
+li{
+	padding-bottom: 30px;
+	border-bottom: 3px solid grey;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+img{
+	width: 70px;
+	height: 70px;
+	}
